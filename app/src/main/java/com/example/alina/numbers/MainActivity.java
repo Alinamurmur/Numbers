@@ -17,9 +17,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-        Button but1 = (Button)findViewById(R.id.b1);
-        Button but2 = (Button)findViewById(R.id.b2);
-        Button but3 = (Button)findViewById(R.id.b3);
+        Button but1 = (Button)findViewById(R.id.button);
+        Button but2 = (Button)findViewById(R.id.button2);
 
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +26,8 @@ public class MainActivity extends Activity {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 FragmentDraw fragment = new FragmentDraw();
-                fragmentTransaction.add(R.id.fragment_game,fragment);
+                fragmentTransaction.add(R.id.fragment_container,fragment);
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
@@ -39,16 +39,6 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
-        but3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Records.class);
-                startActivity(intent);
-            }
-        });
-
-
 
     }
 

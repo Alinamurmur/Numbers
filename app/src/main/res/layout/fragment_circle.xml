@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fon">
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/stop"
+        android:id="@+id/button4"
+        android:background="@drawable/but"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@+id/chronometer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/pause"
+        android:id="@+id/button5"
+        android:background="@drawable/but"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_above="@+id/cir"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cir"
+        android:layout_below="@+id/button4">
+    </RelativeLayout>
+
+</RelativeLayout>

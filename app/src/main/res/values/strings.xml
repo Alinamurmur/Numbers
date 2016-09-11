@@ -6,10 +6,14 @@
     <string name="b1">Новая игра</string>
     <string name="b2">Рекорды</string>
     <string name="b3">Настройки</string>
-    <string name="b4">Что это?</string>
     <string name="title_activity_records">Records</string>
     <string name="tabl">Таблица игроков</string>
+    <string name="stop">Стоп</string>
+    <string name="pause">Пауза</string>
+    <string name="message">Поздравляем!</string>
+    <string name="menu">Меню</string>
+    <string name="priv">Ваше имя:</string>
+    <string name="priv2">Поехали</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
