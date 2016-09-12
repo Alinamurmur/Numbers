@@ -23,11 +23,10 @@ public class FragmentDraw extends Fragment {
     Button stop,pause;
     AlertDialog.Builder ald,paus;
     long timeWhenStopped = 0;
-    int min =0,sec=0;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_circle, container, false);
-        final Intent intentR = new Intent(getActivity(),Records.class);
+        final Intent intentR = new Intent(getActivity(),RecHelp.class);
 
         chronometer = (Chronometer) rootView.findViewById(R.id.chronometer);
         chronometer.start();

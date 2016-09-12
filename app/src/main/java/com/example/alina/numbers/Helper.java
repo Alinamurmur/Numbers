@@ -37,4 +37,10 @@ public class Helper extends SQLiteOpenHelper {
         timeValues.put("TIME",time);
         db.insert("RECORDS",null,timeValues);
     }
+
+    public static void updateTable(SQLiteDatabase db,String name, String time){
+        ContentValues timeUpdateValues = new ContentValues();
+        timeUpdateValues.put("TIME",time);
+        db.update("RECORDS", timeUpdateValues, "NAME=?", new String[]{name});
+    }
 }
